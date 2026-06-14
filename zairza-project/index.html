@@ -30,7 +30,8 @@
 
     <div class="slideshow">
         <button id="prev" class="nav-btn">←</button>
-        <img id="slide" src="https://pin.it/2gtPZmrs5" alt="pic1">
+            <img id="slideA" class="slide-img" src="images/img1.png" alt="slideshow image A">
+            <img id="slideB" class="slide-img" src="images/img1.png" alt="slideshow image B" style="opacity:0">
         <button id="next" class="nav-btn">→</button>
     </div>
 
@@ -71,23 +72,49 @@
 </body>
 <script>
     const images = [
-    "https://drive.google.com/file/d/1ZbjehujwIQmVuaAXEthbQnf6FJ17ZJL8/view?usp=drive_link",
-    "https://drive.google.com/file/d/1hiwipLMJ7cyeIJKGuykfrTRhErEHwehk/view?usp=drive_link",
-    "https://drive.google.com/file/d/1NpHsAJ9AW0P9cPOSqMMePtOeRpwDRdQK/view?usp=drive_link"
+    "images/img1.png",
+    "images/img2.jpeg",
+    "images/img3.jpeg"
     ];
 
     let current = 0;
+    const slideA = document.getElementById('slideA');
+    const slideB = document.getElementById('slideB');
+    let visible = slideA;
+    let hidden = slideB;
+    visible.style.opacity = 1;
+    visible.style.zIndex = 2;
+    hidden.style.opacity = 0;
+    hidden.style.zIndex = 1;
 
-    const slide = document.getElementById("slide");
+    function changeImage(newIndex) {
+        if (newIndex === current) return;
+        hidden.src = images[newIndex];
+        hidden.style.zIndex = 3;
+        visible.style.zIndex = 2;
+        // force reflow then start crossfade
+        void hidden.offsetWidth;
+        hidden.style.opacity = 1;
+        visible.style.opacity = 0;
+
+        hidden.addEventListener('transitionend', function handler(e) {
+            if (e.propertyName !== 'opacity') return;
+            hidden.removeEventListener('transitionend', handler);
+            const tmp = visible;
+            visible = hidden;
+            hidden = tmp;
+            hidden.style.zIndex = 1;
+            visible.style.zIndex = 2;
+            current = newIndex;
+        }, { once: true });
+    }
 
     document.getElementById("next").addEventListener("click", () => {
-        current = (current + 1) % images.length;
-        slide.src = images[current];
+        changeImage((current + 1) % images.length);
     });
 
     document.getElementById("prev").addEventListener("click", () => {
-        current = (current - 1 + images.length) % images.length;
-        slide.src = images[current];
+        changeImage((current - 1 + images.length) % images.length);
     });
 
     const carousel = document.querySelector(".carousel");
