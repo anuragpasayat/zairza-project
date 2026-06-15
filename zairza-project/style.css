@@ -14,6 +14,9 @@ html, body {
 }
 
 .container {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -49,8 +52,7 @@ html, body {
     padding: 20px;
     /* background: bisque; */
     font-size: x-large;
-    font-style: italic;
-    /* font-family: 'popins', ; */
+    /* font-style: italic; */
     
 }
 
@@ -60,6 +62,7 @@ html, body {
     text-decoration: none;
     display: inline-block;
     transition: 0.5s;
+    font-family: "DM sans", sans-serif !important;
 }
 
 .nav-links a:hover{
@@ -86,7 +89,7 @@ html, body {
 /* slideshow*/
 .slideshow{
     position: relative;
-    height: 300px;
+    height: 400px;
     overflow: hidden;
     /* margin-left: -50vh;
     margin-right: -50vh; */
