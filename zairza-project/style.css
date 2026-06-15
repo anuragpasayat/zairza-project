@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: o;
+    box-sizing: border-box;
+}
+
 html{
     scroll-behavior: smooth;
 }
@@ -13,7 +19,7 @@ html, body {
     align-items: center;
     width: 100%;
     /* padding: 20px; */
-    background: bisque;
+    background: hwb(33 22% 0%);
     height: auto;
     box-shadow: 0 5px 1000px rgba(0,0,0,0.1);
     border: 0;
@@ -21,6 +27,7 @@ html, body {
 
 .logo {
     font-family: 'story script', cursive;
+    padding: 20px;
 }
 
 .navbar{
@@ -28,7 +35,7 @@ html, body {
     justify-content: flex-end;
     align-items: center;
     flex: 1;
-    background: bisque;
+    /* background: bisque; */
 }
 
 .nav-links{
@@ -40,9 +47,10 @@ html, body {
     list-style: none;
 
     padding: 20px;
-    background: bisque;
-    font-size: large;
+    /* background: bisque; */
+    font-size: x-large;
     font-style: italic;
+    /* font-family: 'popins', ; */
     
 }
 
@@ -55,14 +63,30 @@ html, body {
 }
 
 .nav-links a:hover{
-    color: #d6b138;
-    transform: scale(1.2);
+    color: brown;
+    transform: scale(1.1);
+}
+
+.order-now{
+    border-radius: 20px;
+    color: #2c1d04; 
+    font-size: large;
+    margin: 20px;
+
+    background-image: 
+    linear-gradient(135deg, #bf953f 0%, #fcf6ba 25%, #b38728 50%, #fbf5b7 75%, #aa771c 100%);
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.order-now:hover {
+    transform: scale(1.05);
 }
 
 /* slideshow*/
 .slideshow{
     position: relative;
-    height: 500px;
+    height: 300px;
     overflow: hidden;
     /* margin-left: -50vh;
     margin-right: -50vh; */
@@ -86,7 +110,6 @@ html, body {
     pointer-events: none;
 }
 
-/* (old #slide rules removed) */
 
 .nav-btn{
     position: absolute;
@@ -95,10 +118,12 @@ html, body {
 
     background: rgba(255,255,255,0.5);
     border: none;
-    padding: 10px 15px;
     cursor: pointer;
-    font-size: 1.5rem;
+    font-size: x-large;
     z-index: 20;
+
+    padding: 10px 15px;
+    border-radius: 30px;
 }
 
 #prev{
@@ -109,14 +134,17 @@ html, body {
     right: 20px;
 }
 
-/*pasta menu carousel*/
+/*popular items carousel*/
 
 .carousel-container{
+    position: relative;
     display:flex;
     align-items:center;
     gap:20px;
     max-width:100%;
     overflow:hidden;
+    padding: 50px;
+    height: auto;
 }
 
 .carousel{
@@ -131,23 +159,29 @@ html, body {
     width:100%;
 }
 
+.carousel-nav{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+
+#left{
+    left: 10px;
+    
+}
+
+#right{
+    right: 10px;
+    
+
+}
+
 .carousel::-webkit-scrollbar{
     display:none;
 }
 
-.card{
-    min-width:250px;
-    scroll-snap-align:start;
-
-    background:white;
-    border-radius:15px;
-
-    overflow:hidden;
-
-    box-shadow:0 5px 15px rgba(0,0,0,0.1);
-
-    flex-shrink:0;
-}
 
 .card{
     min-width:250px;
@@ -181,4 +215,18 @@ html, body {
 
 .card:hover {
     transform: scale(1.02);
+}
+
+.carousel-nav{
+    /* position: absolute; */
+
+    /* top: 50%; */
+    transform: translateY(-50%);
+
+    background: rgba(255,255,255,0.5);
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: medium;
+    z-index: 20;
 }
