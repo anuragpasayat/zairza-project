@@ -8,6 +8,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Story+Script&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body style="background-color: bisque;">
     <!--bisque -->
@@ -15,13 +31,13 @@
     <div class="container">
 
         <div class="logo">
-            <h1>Café</h1>
+            <h1>ButterBloom</h1>
         </div>
         <nav class="navbar">
             <ul class="nav-links">
+                <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
-                <li><a href="#popular-items">Popular Items</a></li>
-                <li><a href="#">Find us</a></li>
+                <li><a href="#">Menu</a></li>
                 <li><a href="#">Contact us</a></li>
             </ul>
         </nav>
@@ -40,10 +56,23 @@
             <img id="slideB" class="slide-img" src="images/img1.png" alt="slideshow image B" style="opacity:0">
         <button id="next" class="nav-btn">→</button>
     </div>
-
+    <div class="aboutus">
+       <img data-aos="zoom-out"  id="collage" src="images/aboutusimage1.png" >
+       <div  data-aos="fade-left" id="bolb"></div>
+       <div class="abouttext">
+       <h1 data-aos="zoom-in-left" id="text">About Us</h1>
+      <br> <p data-aos="fade-down" id="cakes">Welcome to ButterBloom!
+We are more than just a cafe. From creamy
+milkshakes to cheesy burgers, from freshly
+brewed coffee to homemade pastries and 
+delicious pasta — we have something for 
+every craving. Come hungry, leave happy!</p>
+<br>
+    </div>
+</div>
     <section class="menu" id="popular-items">
         <br> <br>
-        <h2>Popular items</h2>
+        <h3>Popular items</h3>
 
         <div class="carousel-container">
             <button id="left" class="carousel-nav">←</button>
@@ -99,6 +128,11 @@
             <button id="right" class="carousel-nav">→</button>
         </div>
     </section>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+  AOS.init();
+</script>
 </body>
 <script>
     const images = [

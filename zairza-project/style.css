@@ -2,6 +2,7 @@
     margin: 0;
     padding: o;
     box-sizing: border-box;
+    
 }
 
 html{
@@ -19,7 +20,7 @@ html, body {
     align-items: center;
     width: 100%;
     /* padding: 20px; */
-    background: hwb(33 22% 0%);
+
     height: auto;
     box-shadow: 0 5px 1000px rgba(0,0,0,0.1);
     border: 0;
@@ -27,7 +28,7 @@ html, body {
 
 .logo {
     font-family: 'story script', cursive;
-    padding: 20px;
+    color: hwb(33 22% 0%);
 }
 
 .navbar{
@@ -49,13 +50,13 @@ html, body {
     padding: 20px;
     /* background: bisque; */
     font-size: x-large;
-    font-style: italic;
+    font-family:"Poppins", sans-serif;
     /* font-family: 'popins', ; */
     
 }
 
 .nav-links a{
-    color: #2C1C1D;
+     color: #5E2c04;
     /* #d6b138 */
     text-decoration: none;
     display: inline-block;
@@ -86,7 +87,7 @@ html, body {
 /* slideshow*/
 .slideshow{
     position: relative;
-    height: 300px;
+    height: 500px;
     overflow: hidden;
     /* margin-left: -50vh;
     margin-right: -50vh; */
@@ -229,4 +230,57 @@ html, body {
     cursor: pointer;
     font-size: medium;
     z-index: 20;
+}
+.aboutus{
+   height : 600px;
+   background-color: hwb(33 22% 0%);
+   margin-top:60px;
+   border-radius: 5%;
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+#collage{
+    padding-top:20px;
+    height:800px;
+    padding-left: 70px;
+    padding-bottom:100px;
+    z-index:1;
+    position: relative;
+}
+#bolb {
+  background-color: rgb(95,158,160);
+  border-radius: 60% 40% 70% 30% / 50% 60% 40% 50%;
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  z-index: 0;
+  top:50%;
+  left:20%;
+  transform: translate(-50%, -50%);
+}
+#text{
+    top:50%;
+    left:50%;
+    margin-top:20px;
+    margin-left:90px;
+    color: #5E2c04; 
+    font-size:80px;
+    z-index:1;
+    font-family:"Dancing Script", cursive;
+    
+}
+#cakes{
+    position: relative;
+    margin-top: 50px;
+    font-family: "Poppins", sans-serif;
+    margin-right:10px;
+    margin-left: 90px;
+    font-size: 35px;
+    font-weight:400px;
+}
+.abouttext{
+    display:flex;
+    flex-direction: column;
 }
