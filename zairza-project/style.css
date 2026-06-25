@@ -37,11 +37,10 @@ body{
     
     padding:0 40px;
     background:rgba(255,248,240,.85);
-    backdrop-filter:blur(18px);
+    backdrop-filter:blur(5px);
     
     border-radius:20px;
-    box-shadow:
-    0 15px 40px rgba(0,0,0,.12);
+    box-shadow: 0 15px 40px rgba(0,0,0,.12);
     
     z-index:1000;
     transition:.35s;
@@ -51,7 +50,7 @@ body{
 
     transform:
     translateX(-50%)
-    translateY(-6px);
+    translateY(-2px);
 }
 
 .logo{
@@ -96,7 +95,7 @@ body{
 
 .order-btn:hover{
 
-    transform:translateY(-3px);
+    transform:translateY(-1px);
 }
 
 /* hero image*/
