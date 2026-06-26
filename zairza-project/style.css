@@ -147,6 +147,7 @@ body{
     background:#C98A3D;
     color:white;
     cursor:pointer;
+    text-decoration: none;
 }
 
 .secondary{
@@ -453,3 +454,139 @@ body{
     box-shadow: 0 15px 30px rgba(0,0,0,.15);
 }
 
+/* testimonial */
+
+.testimonials {
+    padding: 120px 8%;
+}
+
+.testimonial-grid {
+    display: flex;
+    gap: 30px;
+    margin-top: 60px;
+}
+
+.testimonial-card {
+    flex: 1;
+    background: #FFF9F2;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,.08);
+    transition: .3s;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 45px rgba(0,0,0,.15);
+}
+
+.stars {
+    color: #E5A100;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.testimonial-card p {
+    color: #666;
+    line-height: 1.8;
+}
+
+.testimonial-card h4 {
+    margin-top: 20px;
+    color: #3A2416;
+}
+
+/* find us */
+
+.location {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    padding: 120px 8%;
+}
+
+.location-text {
+    width: 40%;
+}
+
+.location-text h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 3rem;
+    margin: 15px 0 30px;
+}
+
+.location-text p {
+    line-height: 2;
+    margin-bottom: 25px;
+    color: #666;
+}
+
+.location-map {
+    width: 55%;
+}
+
+.location-map iframe {
+    width: 100%;
+    height: 400px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 20px 45px rgba(0,0,0,.12);
+}
+
+/* footer */
+
+footer {
+    background: #3A2416;
+    color: white;
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.footer-logo {
+    font-family: "Story Script";
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 35px 0;
+    cursor: pointer;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.footer-links a:hover {
+    color: #C98A3D;
+}
+
+/* back to top */
+
+#topBtn {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    width: 55px;
+    height: 55px;
+    border: none;
+    border-radius: 50%;
+    background: #C98A3D;
+    color: white;
+    font-size: 1.4rem;
+    cursor: pointer;
+    display: none;
+    box-shadow: 0 10px 30px rgba(0,0,0,.2);
+    transition: 0.2s;
+    opacity: 75%;
+}
+
+#topBtn:hover {
+    opacity: 100%;
+}
