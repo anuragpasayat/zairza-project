@@ -1115,3 +1115,22 @@ footer {
     text-decoration:none;
     
 }
+.filter-btn {
+  padding: 10px 16px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  transition: 0.3s;
+  border: 2px solid #C98A3D;
+  border-radius:20px;
+}
+
+.filter-btn:hover {
+  color: #C98A3D; ; /*  order-now color */
+}
+
+.filter-btn.active {
+  background-color:#C98A3D;
+  color: white;
+  border-radius: 20px;
+}
