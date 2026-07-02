@@ -1134,3 +1134,8 @@ footer {
   color: white;
   border-radius: 20px;
 }
+.nav-links a.active{
+    color: #B65E3C;
+    font-weight:600;
+    position:relative;
+}
