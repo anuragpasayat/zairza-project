@@ -19,15 +19,15 @@
     </div>
 
     <ul class="nav-links">
-        <li><a href="#hero">Home</a></li>
+        <li><a class="active" href="index.html">Home</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#popular">Popular Items</a></li>
-        <li><a href="#find">Find Us</a></li>
+        <li><a  href="menu.html">Menu</a></li>
         <li><a href="#contact">Contact</a></li>
+        <li><a href="orders.html">Orders</a></li>
     </ul>
 
     <button class="order-btn">
-        Order Now
+      <a href="menu.html">  Order Now </a>
     </button>
 
 </nav>
@@ -55,7 +55,7 @@
 
 <section class="hero">
 
-    <div class="hero-left">
+    <div class="hero-content" >
 
         <h1>
             Fresh Coffee.<br>
@@ -72,11 +72,11 @@
         <div class="hero-buttons">
 
             <button class="primary">
-                Order Now
+             <a href="menu.html"> Order Now</a>
             </button>
 
             <button class="secondary">
-                View Menu
+               <a href="menu.html" >View Menu</a>
             </button>
 
         </div>
@@ -315,14 +315,47 @@ class="bean bean2">-->
     </p>
 
 </footer>
-
+</section>
 <button id="topBtn">
     ↑
 </button>
 
+<script src="script.js"></script>
+<script>
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll(".nav-links a");
+
+window.addEventListener("scroll", () => {
+
+    let current = "";
+
+    sections.forEach(section => {
+
+        const sectionTop = section.offsetTop - 200;
+        const sectionHeight = section.offsetHeight;
+
+        if (scrollY +300 >= sectionTop && scrollY < sectionTop + sectionHeight) {
+            current = section.id;
+        }
+
+    });
+
+    navLinks.forEach(link => {
+
+        link.classList.remove("active");
+
+        if(link.getAttribute("href") === "#" + current){
+            link.classList.add("active");
+        }
+
+    });
+
+});
+</script>
+
 </body>
 
-<script src="script.js" defer></script>
+
 
 
 </html>
