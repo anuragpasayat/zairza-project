@@ -48,3 +48,10 @@ topBtn.onclick = () => {
         behavior: "smooth"
     });
 };
+
+const hamburger = document.getElementById('hamburger');
+const hamNavLinks = document.getElementById('ham-nav-links');
+
+hamburger.addEventListener('click', () => {hamNavLinks.classList.toggle('active');
+
+});
