@@ -17,11 +17,11 @@
     </div>
 
     <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="index.html">Home</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="menu.html">Menu</a></li>
+        <li><a  href="menu.html">Menu</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><a href="#orders">Orders</a></li>
+        <li><a href="orders.html">Orders</a></li>
     </ul>
 
     <button class="order-btn">
@@ -254,8 +254,8 @@ class="bean bean2">
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1185.2196387924635!2d85.77643682173945!3d20.27662476105991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a19a7001a814341%3A0x3f0c73b7deecc398!2sNesCafe%20OUTR!5e0!3m2!1sen!2sin!4v1782449483945!5m2!1sen!2sin" width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>    </div>
 
 </section>
-
-<footer id="contact">
+<section id="contact">
+<footer >
 
     <div class="footer-logo">
         ButterBloom
@@ -278,14 +278,47 @@ class="bean bean2">
     </p>
 
 </footer>
-
+</section>
 <button id="topBtn">
     ↑
 </button>
 
+<script src="script.js"></script>
+<script>
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll(".nav-links a");
+
+window.addEventListener("scroll", () => {
+
+    let current = "";
+
+    sections.forEach(section => {
+
+        const sectionTop = section.offsetTop - 200;
+        const sectionHeight = section.offsetHeight;
+
+        if (scrollY +300 >= sectionTop && scrollY < sectionTop + sectionHeight) {
+            current = section.id;
+        }
+
+    });
+
+    navLinks.forEach(link => {
+
+        link.classList.remove("active");
+
+        if(link.getAttribute("href") === "#" + current){
+            link.classList.add("active");
+        }
+
+    });
+
+});
+</script>
+
 </body>
 
-<script src="script.js" defer></script>
+
 
 
 </html>
