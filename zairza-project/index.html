@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>coffee peena hai yara</title>
+    <title>ButterBloom</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -35,9 +35,9 @@
     <ul class="nav-links">
         <li><a class="active" href="index.html">Home</a></li>
         <li><a href="#about">About</a></li>
-        <li><a  href="menu.html">Menu</a></li>
+        <li><a  href="#find">Find Us</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><a href="orders.html">Orders</a></li>
+        <li><a href="orders.html">My Orders</a></li>
     </ul>
 
     <button class="order-btn">
@@ -50,7 +50,7 @@
 
 <nav class="hamburger" id="hamburger">
     <!-- <div class="logo2">ButterBloom</div> -->
-    <button class="hamburger-btn" id="menuToggle" aria-label="Toggle Navigation">
+    <button class="hamburger-btn" id="menuToggle" aria-label="Toggle Navigation" aria-expanded="false">
     <span class="bar"></span>
     <span class="bar"></span>
     <span class="bar"></span>
@@ -58,10 +58,11 @@
 
     <!-- <button class="hamburger-btn">☰</button> -->
     <ul class="ham-nav-links" id="ham-nav-links">
+        <li><a href="index.html">Home</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#popular">Popular Items</a></li>
-        <li><a href="#find">Find Us</a></li>
+        <li><a href="menu.html">Menu</a></li>
         <li><a href="#contact">Contact</a></li>
+        <li><a href="orders.html">Orders</a></li>
     </ul>
 </nav>
 
@@ -208,6 +209,20 @@ class="bean bean2">-->
                 </div>
             </div>
 
+            <div class="card">
+                <img src="images/drinks/coldcoffee.jpg" alt="White Sauce Pasta">
+
+                <div class="card-content">
+                    <h3>Cold Coffee</h3>
+                    <p>A chilled fusion of coffee and creamy milk,a warm Indian classic that feels like home in every sip.</p>
+
+                    <div class="price-row">
+                        <span class="rating">★★★★</span>
+                        <span class="price">₹200</span>
+                    </div>
+                </div>
+            </div>
+
 
         </div>
 
@@ -335,37 +350,6 @@ class="bean bean2">-->
 </button>
 
 <script src="script.js"></script>
-<script>
-const sections = document.querySelectorAll("section");
-const navLinks = document.querySelectorAll(".nav-links a");
-
-window.addEventListener("scroll", () => {
-
-    let current = "";
-
-    sections.forEach(section => {
-
-        const sectionTop = section.offsetTop - 200;
-        const sectionHeight = section.offsetHeight;
-
-        if (scrollY +300 >= sectionTop && scrollY < sectionTop + sectionHeight) {
-            current = section.id;
-        }
-
-    });
-
-    navLinks.forEach(link => {
-
-        link.classList.remove("active");
-
-        if(link.getAttribute("href") === "#" + current){
-            link.classList.add("active");
-        }
-
-    });
-
-});
-</script>
 
 </body>
 
