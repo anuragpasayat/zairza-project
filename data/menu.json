@@ -5,7 +5,7 @@
     "name": "Cappuccino",
     "category": "drinks",
     "price": "Rs120",
-    "img": "images/drinks/cappuccino.jpg",
+    "img": "../images/drinks/cappuccino.jpg",
     "description": "Velvety espresso with perfectly frothed milk. A classic, always.",
     "item-id": 1
   },
@@ -14,7 +14,7 @@
     "name": "Masala Chai",
     "category": "drinks",
     "price": "Rs80",
-    "img": "images/drinks/masalachai.jpg",
+    "img": "../images/drinks/masalachai.jpg",
     "description": "A bold blend of special tea and simmered milk, a warm Indian classic that feels like home in every sip.",
     "item-id": 2
   },
@@ -23,7 +23,7 @@
     "name": "Cold Coffee",
     "category": "drinks",
     "price": "Rs150",
-    "img": "images/drinks/coldcoffee.jpg",
+    "img": "../images/drinks/coldcoffee.jpg",
     "description": "A chilled fusion of coffee and creamy milk,a warm Indian classic that feels like home in every sip.",
     "item-id": 3
   },
@@ -32,7 +32,7 @@
     "name": "Matcha",
     "category": "drinks",
     "price": "Rs350",
-    "img": "images/drinks/matcha.jpg",
+    "img": "../images/drinks/matcha.jpg",
     "description": "A vibrant green whisked tea with earthy depth and silky milk, calm, clean, and quiet energizing.",
     "item-id": 4
   },
@@ -41,7 +41,7 @@
     "name": "Americano",
     "category": "drinks",
     "price": "Rs200",
-    "img": "images/drinks/americano.jpg",
+    "img": "../images/drinks/americano.jpg",
     "description": "A pure espresso softened with hot water,simple,strong and unapologetically bold in every sip.",
     "item-id": 5
   },
@@ -50,7 +50,7 @@
     "name": "Classic Veg Burger",
     "category": "burger",
     "price": "Rs120",
-    "img": "images/burger/classicvegburger.jpg",
+    "img": "../images/burger/classicvegburger.jpg",
     "description": "Velvety espresso with perfectly frothed milk. A classic, always.",
     "item-id": 6
   },
@@ -59,7 +59,7 @@
     "name": "Crispy Paneer Burger",
     "category": "burger",
     "price": "Rs80",
-    "img": "images/burger/crispypaneerburger.jpg",
+    "img": "../images/burger/crispypaneerburger.jpg",
     "description": "A bold blend of special tea and simmered milk, a warm Indian classic that feels like home in every sip.",
     "item-id": 7
   },
@@ -68,7 +68,7 @@
     "name": "Double Cheese Burger",
     "category": "burger",
     "price": "Rs150",
-    "img": "images/burger/doublecheeseburger.jpg",
+    "img": "../images/burger/doublecheeseburger.jpg",
     "description": "A chilled fusion of coffee and creamy milk,a warm Indian classic that feels like home in every sip.",
     "item-id": 8
   },
@@ -77,7 +77,7 @@
     "name": "Chicken Burger",
     "category": "burger",
     "price": "Rs350",
-    "img": "images/burger/chickenburger.jpg",
+    "img": "../images/burger/chickenburger.jpg",
     "description": "A vibrant green whisked tea with earthy depth and silky milk, calm, clean, and quiet energizing.",
     "item-id": 9
   },
@@ -86,7 +86,7 @@
     "name": "Aloo Tikki Burger",
     "category": "burger",
     "price": "Rs200",
-    "img": "images/burger/alootikkiburger2.jpg",
+    "img": "../images/burger/alootikkiburger2.jpg",
     "description": "A pure espresso softened with hot water,simple,strong and unapologetically bold in every sip.",
     "item-id": 10
   },
@@ -95,7 +95,7 @@
     "name": "Grilled Veg Sandwich",
     "category": "sandwich",
     "price": "Rs120",
-    "img": "images/sandwich/veggrilledsandwich.jpg",
+    "img": "../images/sandwich/veggrilledsandwich.jpg",
     "description": "Velvety espresso with perfectly frothed milk. A classic, always.",
     "item-id": 11
   },
@@ -104,7 +104,7 @@
     "name": "Corn & Cheese Sandwich",
     "category": "sandwich",
     "price": "Rs80",
-    "img": "images/sandwich/cornandcheesesandwich.jpg",
+    "img": "../images/sandwich/cornandcheesesandwich.jpg",
     "description": "A bold blend of special tea and simmered milk, a warm Indian classic that feels like home in every sip.",
     "item-id": 12
   },
@@ -113,7 +113,7 @@
     "name": "Chicken Sandwich",
     "category": "sandwich",
     "price": "Rs150",
-    "img": "images/sandwich/chickensandwich.jpg",
+    "img": "../images/sandwich/chickensandwich.jpg",
     "description": "A chilled fusion of coffee and creamy milk,a warm Indian classic that feels like home in every sip.",
     "item-id": 13
   },
@@ -122,7 +122,7 @@
     "name": "Cheese Burst Pizza",
     "category": "pizza",
     "price": "Rs120",
-    "img": "images/pizza/cheeseburstpizza.jpg",
+    "img": "../images/pizza/cheeseburstpizza.jpg",
     "description": "Velvety espresso with perfectly frothed milk. A classic, always.",
     "item-id": 14
   },
@@ -131,7 +131,7 @@
     "name": "Paneer Tikka Pizza",
     "category": "pizza",
     "price": "Rs80",
-    "img": "images/pizza/paneertikkapizza.jpg",
+    "img": "../images/pizza/paneertikkapizza.jpg",
     "description": "A bold blend of special tea and simmered milk, a warm Indian classic that feels like home in every sip.",
     "item-id": 15
   },
@@ -140,7 +140,7 @@
     "name": "Margherita Pizza",
     "category": "pizza",
     "price": "Rs150",
-    "img": "images/pizza/margheritapizza.jpg",
+    "img": "../images/pizza/margheritapizza.jpg",
     "description": "A chilled fusion of coffee and creamy milk,a warm Indian classic that feels like home in every sip.",
     "item-id": 16
   },
@@ -149,7 +149,7 @@
     "name": "Mac & Cheese Pasta",
     "category": "pasta",
     "price": "Rs120",
-    "img": "images/pasta/macandcheesepasta.jpg",
+    "img": "../images/pasta/macandcheesepasta.jpg",
     "description": "Velvety espresso with perfectly frothed milk. A classic, always.",
     "item-id": 17
   },
@@ -158,7 +158,7 @@
     "name": "Arrabbiata Pasta",
     "category": "pasta",
     "price": "Rs80",
-    "img": "images/pasta/arrabbiatapasta.jpg",
+    "img": "../images/pasta/arrabbiatapasta.jpg",
     "description": "A bold blend of special tea and simmered milk, a warm Indian classic that feels like home in every sip.",
     "item-id": 18
   },
@@ -167,7 +167,7 @@
     "name": "White Sauce Pasta",
     "category": "pasta",
     "price": "Rs150",
-    "img": "images/pasta/whitesaucepasta.jpg",
+    "img": "../images/pasta/whitesaucepasta.jpg",
     "description": "A chilled fusion of coffee and creamy milk,a warm Indian classic that feels like home in every sip.",
     "item-id": 19
   },
@@ -176,7 +176,7 @@
     "name": "Classic Fries",
     "category": "side",
     "price": "Rs120",
-    "img": "images/sides/classicfries.jpg",
+    "img": "../images/sides/classicfries.jpg",
     "description": "Velvety espresso with perfectly frothed milk. A classic, always.",
     "item-id": 20
   },
@@ -185,7 +185,7 @@
     "name": "Peri Peri Fries",
     "category": "side",
     "price": "Rs80",
-    "img": "images/sides/periperifries.jpg",
+    "img": "../images/sides/periperifries.jpg",
     "description": "A bold blend of special tea and simmered milk, a warm Indian classic that feels like home in every sip.",
     "item-id": 21
   },
@@ -194,7 +194,7 @@
     "name": "Nachos",
     "category": "side",
     "price": "Rs150",
-    "img": "images/sides/nachos.jpg",
+    "img": "../images/sides/nachos.jpg",
     "description": "A chilled fusion of coffee and creamy milk,a warm Indian classic that feels like home in every sip.",
     "item-id": 22
   },
@@ -203,7 +203,7 @@
     "name": "Red Velvet Pastry",
     "category": "desserts",
     "price": "Rs120",
-    "img": "images/desserts/redvelvetpastry.jpg",
+    "img": "../images/desserts/redvelvetpastry.jpg",
     "description": "Velvety espresso with perfectly frothed milk. A classic, always.",
     "item-id": 23
   },
@@ -212,7 +212,7 @@
     "name": "Cheesecake",
     "category": "desserts",
     "price": "Rs180",
-    "img": "images/desserts/cheesecake.jpg",
+    "img": "../images/desserts/cheesecake.jpg",
     "description": "A bold blend of special tea and simmered milk, a warm Indian classic that feels like home in every sip.",
     "item-id": 24
   },
@@ -221,7 +221,7 @@
     "name": "Glazed Donuts",
     "category": "desserts",
     "price": "Rs150",
-    "img": "images/desserts/glazeddonut.jpg",
+    "img": "../images/desserts/glazeddonut.jpg",
     "description": "A chilled fusion of coffee and creamy milk,a warm Indian classic that feels like home in every sip.",
     "item-id": 25
   }

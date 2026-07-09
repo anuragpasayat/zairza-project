@@ -43,7 +43,7 @@ function createCard(item){
 
 async function loadMenu() {
 
-    const response = await fetch("menu.json");
+    const response = await fetch("../data/menu.json");
 
     menu = await response.json();
 
