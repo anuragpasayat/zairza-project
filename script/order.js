@@ -3,32 +3,32 @@ const ordersContainer = document.querySelector(".orders-container");
 const emptyOrders = document.querySelector(".empty-orders");
 
 const orderImages = {
-    cheesecake: "images/desserts/cheesecake.jpg",
-    glazeddonut: "images/desserts/glazeddonut.jpg",
-    redvelvetpastry: "images/desserts/redvelvetpastry.jpg",
-    whitesaucepasta: "images/pasta/whitesaucepasta.jpg",
-    macandcheesepasta: "images/pasta/macandcheesepasta.jpg",
-    arrabbiatapasta: "images/pasta/arrabbiatapasta.jpg",
-    paneertikkapizza: "images/pizza/paneertikkapizza.jpg",
-    margheritapizza: "images/pizza/margheritapizza.jpg",
-    cheeseburstpizza: "images/pizza/cheeseburstpizza.jpg",
-    alootikkiburger: "images/burger/alootikkiburger.jpg",
-    alootikkiburger2: "images/burger/alootikkiburger2.jpg",
-    chickenburger: "images/burger/chickenburger.jpg",
-    classicvegburger: "images/burger/classicvegburger.jpg",
-    crispypaneerburger: "images/burger/crispypaneerburger.jpg",
-    doublecheeseburger: "images/burger/doublecheeseburger.jpg",
-    chickensandwich: "images/sandwich/chickensandwich.jpg",
-    cornandcheesesandwich: "images/sandwich/cornandcheesesandwich.jpg",
-    veggrilledsandwich: "images/sandwich/veggrilledsandwich.jpg",
-    classicfries: "images/sides/classicfries.jpg",
-    nachos: "images/sides/nachos.jpg",
-    periperifries: "images/sides/periperifries.jpg",
-    americano: "images/drinks/americano.jpg",
-    cappuccino: "images/drinks/cappuccino.jpg",
-    coldcoffee: "images/drinks/coldcoffee.jpg",
-    masalachai: "images/drinks/masalachai.jpg",
-    matcha: "images/drinks/matcha.jpg"
+    cheesecake: "../images/desserts/cheesecake.jpg",
+    glazeddonut: "../images/desserts/glazeddonut.jpg",
+    redvelvetpastry: "../images/desserts/redvelvetpastry.jpg",
+    whitesaucepasta: "../images/pasta/whitesaucepasta.jpg",
+    macandcheesepasta: "../images/pasta/macandcheesepasta.jpg",
+    arrabbiatapasta: "../images/pasta/arrabbiatapasta.jpg",
+    paneertikkapizza: "../images/pizza/paneertikkapizza.jpg",
+    margheritapizza: "../images/pizza/margheritapizza.jpg",
+    cheeseburstpizza: "../images/pizza/cheeseburstpizza.jpg",
+    alootikkiburger: "../images/burger/alootikkiburger.jpg",
+    alootikkiburger2: "../images/burger/alootikkiburger2.jpg",
+    chickenburger: "../images/burger/chickenburger.jpg",
+    classicvegburger: "../images/burger/classicvegburger.jpg",
+    crispypaneerburger: "../images/burger/crispypaneerburger.jpg",
+    doublecheeseburger: "../images/burger/doublecheeseburger.jpg",
+    chickensandwich: "../images/sandwich/chickensandwich.jpg",
+    cornandcheesesandwich: "../images/sandwich/cornandcheesesandwich.jpg",
+    veggrilledsandwich: "../images/sandwich/veggrilledsandwich.jpg",
+    classicfries: "../images/sides/classicfries.jpg",
+    nachos: "../images/sides/nachos.jpg",
+    periperifries: "../images/sides/periperifries.jpg",
+    americano: "../images/drinks/americano.jpg",
+    cappuccino: "../images/drinks/cappuccino.jpg",
+    coldcoffee: "../images/drinks/coldcoffee.jpg",
+    masalachai: "../images/drinks/masalachai.jpg",
+    matcha: "../images/drinks/matcha.jpg"
 };
 
 function getOrders(){
@@ -119,7 +119,7 @@ function createCartItem(cartItem) {
     item.className = "cart-item";
 
     const image = document.createElement("img");
-    image.src = cartItem.image || orderImages[cartItem.item] || "images/cafe.jpg";
+    image.src = cartItem.image || orderImages[cartItem.item] || "../images/cafe.jpg";
     image.alt = cartItem.name || "Cart item";
 
     const info = document.createElement("div");
@@ -270,7 +270,7 @@ tabs.forEach(tab => {
 });
 
 if (ordersContainer) {
-    fetch("orders.json")
+    fetch("../data/orders.json")
         .then(response => {
             if (!response.ok) {
                 throw new Error("Orders could not be loaded");
