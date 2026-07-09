@@ -1,11 +1,12 @@
 /* MENU */
 
 .ourmenu{
-    height:500px;
+    min-height:auto;
+   height:auto;
     display: flex; 
     flex-direction:column;
     align-items: center;
-    padding-top:80px;
+    padding: 80px ;
     background-color:#E3C39D;
 }
 #mwl{
@@ -320,3 +321,83 @@
     border-radius:30px ;
     cursor: pointer;
  }
+
+ /*=======Mobile========*/
+ @media(max-width: 767px){
+    .header{
+        width:100%;
+        margin:0;
+    }
+        .ourmenu{
+            padding:40px 15px;
+            width: 100%;
+        }
+
+        #our,
+        #menu{
+            font-size:2.5rem;
+            text-align: center;
+        }
+        #tagline{
+            font-size: 0.9rem;
+            text-align:center;
+            width: 90%;
+        }
+    
+        .buttons{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            padding-top: 30px;
+        }
+        .filter-btn{
+            flex:0 1 auto;
+            padding:10px 18px;
+        }
+         .menuGrid{
+        display:flex;
+        flex-wrap:nowrap;      /* Don't wrap */
+        overflow-x:auto;       /* Allow horizontal scroll */
+        gap:20px;
+        padding:10px;
+        margin:20px 0;
+        scroll-snap-type:x mandatory;
+        scrollbar-width:none;  /* Firefox */
+    }
+
+    .menuGrid::-webkit-scrollbar{
+        display:none;          /* Chrome */
+    }
+
+    .food-card{
+        min-width:280px;
+        flex-shrink:0;
+        scroll-snap-align:start;
+    }
+
+    
+ }
+ @media (min-width:768px) and (max-width:1023px){
+
+    .menuGrid{
+        display:grid;
+        grid-template-columns:repeat(2,1fr);
+        gap:25px;
+        margin:30px;
+    }
+
+    .food-card{
+        width:100%;
+    }
+
+    .buttons{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:15px;
+    }
+
+    .ourmenu{
+        padding:60px 30px;
+    }
+}
