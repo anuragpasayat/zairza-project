@@ -299,6 +299,7 @@
     scroll-behavior:smooth;
     scrollbar-width:thin;
     border-radius: 50px;
+    margin-bottom: 100px;
 }
 
 .order-card{
