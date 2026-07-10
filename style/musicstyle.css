@@ -1,0 +1,47 @@
+.music-player{
+
+    position:fixed;
+    bottom:25px;
+    right:25px;
+    width:70px;
+    height:70px;
+    border-radius:18px;
+    background:#fff6e9;
+    box-shadow:0 12px 10px rgba(0,0,0,.08);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    cursor:pointer;
+
+    transition:.3s;
+    z-index:9999;
+}
+
+.music-player img{
+
+    width:45px;
+
+}
+
+.music-player.playing{
+
+    animation:float 5s ease-in-out infinite;
+
+}
+
+@keyframes float{
+
+    0%,100%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-6px);
+
+    }
+
+}

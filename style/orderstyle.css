@@ -13,6 +13,10 @@
     margin-left:70px;
 }
 
+.phone-view {
+    display: none;
+}
+
 .top-left h1{
     color: #3A2416;
     font-family:"Playfair Display", sans-serif;
@@ -276,11 +280,11 @@
     margin-top:200px;
     background-color:transparent;
     box-shadow: 0 10px 30px rgba(0,0,0,.2);
-    width:1200px;
-    height:720px;
+    width:90%;
+    max-width: 1300px;
+    min-height:720px;
     border-radius:20px;
-    overflow:hidden;
-    justify-content: center;
+    overflow:visible;
     margin-left: auto;
     margin-right: auto;
 }
@@ -289,8 +293,9 @@
 
 .orders-container{
     padding-top:10px;
-    max-height:600px;
-    overflow-y:auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     scroll-behavior:smooth;
     scrollbar-width:thin;
     border-radius: 50px;
@@ -308,7 +313,6 @@
     margin:20px;
     box-shadow:0 10px 25px rgba(0,0,0,.08);
     max-height:220px;
-    opacity:1;
     overflow:hidden;
     transform:translateY(0);
     transition:
@@ -441,18 +445,18 @@
 @media(max-width:768px){
     .top-two{
         flex-direction:column;
-        gap:20px;
+        gap:0px;
     }
 
     .top-left{
         height:auto;
-        margin:120px 24px 0;
+        margin:120px 24px 50px;
         width:auto;
     }
 
     .top-right{
         height:auto;
-        margin:20px 16px;
+        margin:150px 16px 10px;
         width:auto;
     }
 
@@ -468,7 +472,12 @@
 
     .top-right-btn{
         flex-wrap:wrap;
-        margin-left:14px;
+        margin-right:5%;
+        justify-content: center;
+    }
+
+    .tab {
+        width: 45%;
     }
 
     .orders-heading{
@@ -488,6 +497,22 @@
 
     .order-right{
         text-align:center;
+    }
+
+    .phone-view {
+        display: flex;
+    }
+
+    .desktop-view {
+        display: none;
+    }
+
+    .my-order {
+        margin-top: 150px;
+    }
+
+    #contact-us {
+        width: 60%;
     }
 
 }
