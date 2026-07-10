@@ -134,7 +134,9 @@ function createCartItem(cartItem) {
 
     const price = document.createElement("strong");
     price.className = "cart-item-price";
-    price.textContent = cartItem.price || "₹0";
+    
+    const subtotal = parsePrice(cartItem.price) * quantity;
+    price.textContent = `${subtotal}`;
 
     info.append(name, quantityText);
     item.append(image, info, price);
@@ -287,3 +289,38 @@ renderCart();
 
 
 checkoutBtn.addEventListener("click", placeOrder);
+
+
+// CONTACT POPUP
+
+const contactBtn=document.querySelectorAll(".contact-us");
+const popup=document.getElementById("contactPopup");
+const closeBtn=document.getElementById("closePopup");
+const contactForm=document.getElementById("contactForm");
+
+contactBtn.forEach(btn =>{
+    btn.addEventListener("click",()=>{
+        popup.classList.add("show");
+    });
+})
+
+closeBtn.addEventListener("click",()=>{
+    popup.classList.remove("show");
+});
+
+popup.addEventListener("click",(e)=>{
+
+    if(e.target===popup){
+        popup.classList.remove("show");
+    }
+});
+
+contactForm.addEventListener("submit",(e)=>{
+
+    e.preventDefault();
+    alert("Thank you! We'll contact you soon.");
+    contactForm.reset();
+    popup.classList.remove("show");
+});
+
+console.log(document.querySelectorAll(".contact-us").length);
