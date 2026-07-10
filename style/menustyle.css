@@ -8,6 +8,7 @@
     align-items: center;
     padding: 80px ;
     background-color:#E3C39D;
+    
 }
 #mwl{
     margin-bottom: 50px;
@@ -323,7 +324,7 @@
  }
 
  /*=======Mobile========*/
- @media(min-width: 767px){
+ @media(max-width: 767px){
     .header{
         width:100%;
         margin:0;
@@ -331,6 +332,7 @@
         .ourmenu{
             padding:40px 15px;
             width: 100%;
+            box-sizing: border-box;
         }
 
         #our,
@@ -351,7 +353,7 @@
             gap: 10px;
             padding-top: 30px;
         }
-        .filter-btn{
+        .buttons button{
             flex:0 1 auto;
             padding:10px 18px;
         }
@@ -371,9 +373,22 @@
     }
 
     .food-card{
-        min-width:280px;
+        min-width:220px;
+        max-width:240px;
         flex-shrink:0;
         scroll-snap-align:start;
+    }
+    .food-card img{
+        height : 160px;
+    }
+    .drinks{
+        justify-content:center;
+        margin-left:0;
+        gap:8px;
+        flex-wrap:nowrap;
+    }
+    #drinks,#sips{
+        font-size:2.2rem;
     }
 
     
@@ -402,4 +417,58 @@
     .ourmenu{
         padding:60px 30px;
     }
+}
+/*===== Extra: Small Phones (≤480px) =====*/
+@media (max-width: 480px) {
+  .ourmenu {
+    padding: 30px 12px;
+  }
+  #our, #menu {
+    font-size: 2rem;
+  }
+  #tagline {
+    font-size: 0.8rem;
+  }
+  .buttons {
+    gap: 8px;
+  }
+  .buttons button {
+    padding: 8px 14px;
+    font-size: 14px;
+  }
+  .food-card {
+    min-width: 240px;
+  }
+  .price-row {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .quantity-selector {
+    flex-wrap: nowrap;
+  }
+  .section-heading {
+    margin: 40px 15px 20px;
+  }
+  #drinks, #sips {
+    font-size: 1.8rem;
+  }
+  .footer {
+    height: auto;
+    padding-bottom: 30px;
+  }
+  .footerbutton {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+}
+
+/*===== Extra: Large Desktop (≥1440px) =====*/
+@media (min-width: 1440px) {
+  .menuGrid {
+    justify-content: center;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
