@@ -304,6 +304,7 @@
     flex-direction:row;
     gap:5px;
  }
+
  #ordernow{
     width:100px;
     height:50px;
@@ -312,6 +313,12 @@
     border-radius:30px ;
     cursor: pointer;
  }
+
+ #ordernow a{
+    text-decoration: none; 
+    color: white;
+ }
+ 
  #visitus{
     width:100px;
     height:50px;
@@ -319,4 +326,10 @@
     color:white;
     border-radius:30px ;
     cursor: pointer;
+    text-decoration: none;
+ }
+
+ #visitus a{
+    text-decoration: none; 
+    color: white;
  }
