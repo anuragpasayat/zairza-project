@@ -514,7 +514,9 @@
 
     .contact-us {
         width: 60%;
+        cursor: pointer;
     }
+
 
 }
 
