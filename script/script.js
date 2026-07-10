@@ -121,6 +121,3 @@ window.addEventListener("scroll", () => {
     });
 
 });
-
-
-// MUSIC PLAYER
