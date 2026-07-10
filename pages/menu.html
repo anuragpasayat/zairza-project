@@ -22,6 +22,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
+    
+    <!-- NAV BAR -->
     <nav class="navbar">
 
     <div class="logo">
@@ -29,36 +31,36 @@
     </div>
 
     <ul class="nav-links">
-        <li><a  href="../index.html">Home</a></li>
-        <section id="about">
-        <li><a href="index.html#about">About</a></li>
-        </section>
-        <li><a href="index.html#find">Find Us</a></li>
-        <section id="contact">
-        <li><a href="menu.html" class="active">Menu</a></li>
-        </section>
-        <li><a href="orders.html">My Orders</a></li>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a  href="#find">Find Us</a></li>
+        <li><a class="active" href="./pages/menu.html">Menu</a></li>
+        <li><a href="./pages/orders.html">My Orders</a></li>
     </ul>
 
     <button class="order-btn">
-        Order Now
+      <a href="./pages/menu.html">Order Now</a>
     </button>
 
 </nav>
 
-<nav class="hamburger" id="hamburger">
-    <button class="hamburger-btn" id="menuToggle" aria-label="Toggle Navigation" aria-expanded="false">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-    </button>
+<!-- HAMBURGER -->
 
+<nav class="hamburger" id="hamburger">
+    <!-- <div class="logo2">ButterBloom</div> -->
+    <button class="hamburger-btn" id="menuToggle" aria-label="Toggle Navigation" aria-expanded="false">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </button>
+
+    <!-- <button class="hamburger-btn">☰</button> -->
     <ul class="ham-nav-links" id="ham-nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="index.html#about">About</a></li>
-        <li><a href="index.html#find">Find Us</a></li>
-        <li><a href="index.html#contact">Contact</a></li>
-        <li><a href="orders.html">Orders</a></li>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../index.html#about">About</a></li>
+        <li><a href="../index.html#find">Find Us</a></li>
+        <li><a class="active" href="menu.html">Menu</a></li>
+        <li><a href="orders.html">My Orders</a></li>
     </ul>
 </nav>
 
