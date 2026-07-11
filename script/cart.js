@@ -33,6 +33,8 @@ function addToCart(item){
 
     saveCart(cart);
 
+    window.dispatchEvent(new Event("cartUpdated"));
+
     if (typeof updateCartPreview === 'function'){
         updateCartPreview();
     }
@@ -58,6 +60,8 @@ function removeFromCart(id){
     }
 
     saveCart(cart);
+
+    window.dispatchEvent(new Event("cartUpdated"));
 
     if (typeof updateCartPreview === 'function'){
         updateCartPreview();

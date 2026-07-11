@@ -441,6 +441,45 @@
     cursor:pointer;
 }
 
+/* QUANTITY CONTROL */
+
+.quantity-controls{
+
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin-top:8px;
+
+}
+
+.quantity-controls button{
+
+    width:32px;
+    height:32px;
+    border:none;
+    border-radius:8px;
+    background:#C98A3D;
+    color:white;
+    cursor:pointer;
+    font-size:18px;
+    font-weight:bold;
+
+}
+
+.quantity-controls span{
+
+    min-width:20px;
+    text-align:center;
+    font-weight:600;
+
+}
+
+.quantity-controls button:hover{
+
+    transform:scale(1.08);
+
+}
+
 /* responsive for phone */
 @media(max-width:768px){
     .top-two{

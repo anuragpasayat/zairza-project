@@ -128,21 +128,60 @@ function createCartItem(cartItem) {
     const name = document.createElement("h3");
     name.textContent = cartItem.name || "Untitled Item";
 
-    const quantity = Number(cartItem.quantity) || 1;
-    const quantityText = document.createElement("p");
-    quantityText.textContent = `Qty ${quantity}`;
+    const controls = document.createElement("div");
+    controls.className = "quantity-controls";
+
+    const minus = document.createElement("button");
+    minus.textContent = "−";
+
+    const qty = document.createElement("span");
+    qty.textContent = cartItem.quantity;
+
+    const plus = document.createElement("button");
+    plus.textContent = "+";
+
+    controls.append(minus, qty, plus);
+
+    info.append(name, controls);
 
     const price = document.createElement("strong");
     price.className = "cart-item-price";
     
-    const subtotal = parsePrice(cartItem.price) * quantity;
-    price.textContent = `₹${subtotal}`;
-
-    info.append(name, quantityText);
+    price.textContent = `₹${parsePrice(cartItem.price) * cartItem.quantity}`
     item.append(image, info, price);
+
+    plus.onclick = () => {
+        addToCart ({
+
+            id: cartItem.id,
+            item: cartItem.item,
+            name: cartItem.name,
+            price: cartItem.price,
+            image: cartItem.image
+        });
+
+        renderCart();
+
+        if(typeof updateCartPreview==="function"){
+            updateCartPreview();
+        }
+    };
+
+    minus.onclick = () => {
+
+        removeFromCart(cartItem.id);
+        renderCart();
+    };
 
     return item;
 }
+
+window.addEventListener("cartUpdated",()=>{
+
+    renderCart();
+
+});
+
 
 function placeOrder(){
 
