@@ -7,12 +7,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../style/style.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="../style/orderstyle.css">
+    <link rel="stylesheet" href="../style/musicstyle.css">
+    <link rel="stylesheet" href="../style/navstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -68,13 +72,15 @@
     </ul>
 </nav>
 
+<!-- CART -->
+
 <div class="top-two">
 
 <div class="top-left desktop-view">
  <h1>Track, savor & relish. </h1>
  <p id="top-left-tag">From freshly placed to freshly delivered, keep track of every bite of happiness.</p>
  <div class="need-help">Need help?
-    <button id="contact-us">Contact Us</button>
+    <button class="contact-us">Contact Us</button>
  </div>
 </div>
 
@@ -99,13 +105,11 @@
         </div>
     </div>
 
-    
-    
-    
-    
 </div>
 
 </div>
+
+<!-- MY ORDERS -->
 
 <div class="my-order">
 
@@ -137,9 +141,41 @@
  <h1>Track, savor & relish. </h1>
  <p id="top-left-tag">From freshly placed to freshly delivered, keep track of every bite of happiness.</p>
  <div class="need-help">Need help?
-    <button id="contact-us">Contact Us</button>
+    <button class="contact-us">Contact Us</button>
  </div>
 </div>
+
+<!-- CONTACT POPUP -->
+
+<div class="contact-popup" id="contactPopup">
+
+    <div class="contact-box">
+
+        <button class="close-popup" id="closePopup">&times;</button>
+
+        <h2>Contact Us</h2>
+
+        <p>We'll get back to you as soon as possible.</p>
+
+        <form id="contactForm">
+
+            <input type="text" id="userName" placeholder="Your Name" required>
+
+            <input type="email" id="userEmail" placeholder="Email Address" required>
+
+            <textarea id="userMessage" placeholder="Your Message" rows="5" required></textarea>
+
+            <button type="submit" class="send-btn">
+                Send
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+
 
 <footer>
 
@@ -153,9 +189,25 @@
 
     <div class="footer-links">
 
-        <a href="https://instagram.com" target="_blank">Instagram</a>
-        <a href="https://facebook.com" target="_blank">Facebook</a>
-        <a href="https://web.whatsapp.com" target="_blank">WhatsApp</a>
+        <a href="https://instagram.com" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <a href="https://facebook.com" target="_blank">
+            <i class="fa-brands fa-facebook-f"></i>
+        </a>
+
+        <a href="https://x.com" target="_blank">
+            <i class="fa-brands fa-x-twitter"></i>
+        </a>
+
+        <a href="https://linkedin.com" target="_blank">
+            <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+
+        <a href="https://github.com/anuragpasayat/zairza-project.git" target="_blank">
+            <i class="fa-brands fa-github"></i>
+        </a>
 
     </div>
 
@@ -170,9 +222,22 @@
     ↑
 </button>
 
+<!-- MUSIC -->
+
+<div class="music-player" id="musicPlayer">
+    <img src="../images/retro-music-player.jpg" alt="Music">
+
+    <audio id="bgMusic" loop>
+        <source src="../music/L-dre-type5.wav" type="audio/mpeg">
+    </audio>
+</div>
+
 <script src="../script/cart.js"></script>
 <script src="../script/order.js"></script>
 <script src="../script/script.js"></script>
+<script src="../script/menu.js"> </script>
+<script src="../script/music.js"> </script>
+
 
 </body>
 </html>
