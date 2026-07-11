@@ -7,7 +7,7 @@
     left:50%;
     transform:translateX(-50%);
     width:92%;
-    height:75px;
+    height: 80px;
 
     display:flex;
     justify-content:space-between;
@@ -32,10 +32,15 @@
 }
 
 .logo{
+    display:flex;
+    align-items:center;
+    text-decoration:none;
+}
 
-    font-family:"Dancing Script",cursive;
-    font-size:3rem;
-    color:#6b3b20;
+.logo img{
+    height:75px;
+    width:auto;
+    display:block;
 }
 
 .nav-links{
@@ -69,7 +74,7 @@
 
     .navbar {
         padding: 0px 20px;
-        height: 75px;
+        height: 80px;
         width: auto;
     }
     

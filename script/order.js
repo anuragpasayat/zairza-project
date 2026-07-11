@@ -136,7 +136,7 @@ function createCartItem(cartItem) {
     price.className = "cart-item-price";
     
     const subtotal = parsePrice(cartItem.price) * quantity;
-    price.textContent = `${subtotal}`;
+    price.textContent = `₹${subtotal}`;
 
     info.append(name, quantityText);
     item.append(image, info, price);

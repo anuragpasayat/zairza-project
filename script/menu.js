@@ -18,7 +18,7 @@ function createCard(item){
 
             <span class="price">
 
-                ${item.price}
+                ₹${item.price}
 
             </span>
 
