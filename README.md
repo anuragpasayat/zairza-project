@@ -43,4 +43,7 @@
 
 #### Ankita Sar
 #### Anurag Pasayat
-#### G.Akila Reddy
+
+## 👨‍🏫Mentor
+
+#### Ashutosh Badapanda
