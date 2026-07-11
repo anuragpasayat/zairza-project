@@ -10,6 +10,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="../style/menustyle.css">
+    <link rel="stylesheet" href="../style/musicstyle.css">
+<link rel="stylesheet" href="../style/navstyle.css">
+
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,14 +35,14 @@
 
     <ul class="nav-links">
         <li><a href="../index.html">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a  href="#find">Find Us</a></li>
-        <li><a class="active" href="./pages/menu.html">Menu</a></li>
-        <li><a href="./pages/orders.html">My Orders</a></li>
+        <li><a href="../index.html#about">About</a></li>
+        <li><a  href="../index.html#find">Find Us</a></li>
+        <li><a class="active" href="../pages/menu.html">Menu</a></li>
+        <li><a href="../pages/orders.html">My Orders</a></li>
     </ul>
 
     <button class="order-btn">
-      <a href="./pages/menu.html">Order Now</a>
+      <a href="../pages/menu.html">Order Now</a>
     </button>
 
 </nav>
@@ -214,8 +217,12 @@
     <h1 id="cat">Order your favourites right now</h1>
     <p id="footertagline">Fresh,warm & made with love- delivered or ready to pick up</p>
     <div class="footerbutton">
-        <button id="ordernow">Order Now</button>
-        <button id="visitus">Visit Us</button>
+        <button id="ordernow" >
+            <a href="orders.html">My Orders</a>
+            </button>
+        <button id="visitus" >
+            <a href="https://maps.app.goo.gl/BBpHZrZ3RLoeZN6t5" target="_blank">Visit Us</a>
+        </button>
     </div>
 </div>
 
@@ -223,9 +230,22 @@
     ↑
 </button>
     
+<!-- MUSIC -->
+
+<div class="music-player" id="musicPlayer">
+    <img src="../images/retro-music-player.jpg" alt="Music">
+
+    <audio id="bgMusic" loop>
+        <source src="../music/L-dre-type5.wav" type="audio/mpeg">
+    </audio>
+</div>
+
+
 <script src="../script/script.js"> </script>
 <script src="../script/cart.js"> </script>
 <script src="../script/menu.js"> </script>
+<script src="../script/music.js"> </script>
+
 
     </body>
 </html>
