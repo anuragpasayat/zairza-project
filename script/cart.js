@@ -33,6 +33,10 @@ function addToCart(item){
 
     saveCart(cart);
 
+    if (typeof updateCartPreview === 'function'){
+        updateCartPreview();
+    }
+
 }
 
 // remove items
@@ -55,6 +59,10 @@ function removeFromCart(id){
 
     saveCart(cart);
 
+    if (typeof updateCartPreview === 'function'){
+        updateCartPreview();
+    }
+
 }
 
 
@@ -67,3 +75,41 @@ function getQuantity(id){
     return item ? item.quantity : 0;
 
 }
+
+// CART PREVIEW
+
+function updateCartPreview(){
+
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    const preview = document.getElementById("cartPreview");
+
+    if(cart.length===0){
+        preview.classList.remove("show");
+        return;
+    }
+
+    let totalItems=0;
+    let totalPrice=0;
+
+    cart.forEach(item=>{
+        totalItems += item.quantity;
+        totalPrice += item.price * item.quantity
+    });
+
+    document.getElementById("cartCount").innerHTML =
+        `${totalItems} ${totalItems>1?"Items":"Item"}`;
+
+    document.getElementById("cartPrice").innerHTML =
+        `₹${totalPrice}`;
+
+    preview.classList.add("show");
+}
+
+document.getElementById("cartPreview").onclick=()=>{
+    window.location.href="orders.html";
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    updateCartPreview();
+});
