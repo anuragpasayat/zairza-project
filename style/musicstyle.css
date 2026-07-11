@@ -26,7 +26,7 @@
 
 .music-player.playing{
 
-    animation:float 5s ease-in-out infinite;
+    animation:float 3s ease-in-out infinite;
 
 }
 
@@ -40,7 +40,7 @@
 
     50%{
 
-        transform:translateY(-6px);
+        transform:translateY(-8px);
 
     }
 
