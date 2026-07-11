@@ -7,14 +7,14 @@
     flex-direction:column;
     align-items: center;
     padding: 80px ;
-    background-color:#3A2416;
+    background-color:#E3C39D;
     
 }
 #mwl{
     margin-bottom: 50px;
     font-family:"Dancing Script", cursive;
     font-size:20px;
-    color:aliceblue;
+    color:#2c1b14;
 }
 .menu{
     display:flex;
@@ -25,7 +25,7 @@
 #our{
     font-family:"Playfair Display", serif;
     font-weight: Bold;
-    color:white;
+    color:black;
     font-size:larger;
 }
 #menu{
@@ -39,7 +39,7 @@
     flex-direction:column;
     align-items:center;
     margin-top:20px;
-    color:#f89204;
+    color:#935d11;
     font-weight:normal;
 }
 #heart{
@@ -302,8 +302,8 @@
     margin-top: 30px;
     margin-bottom : 30px;
     font-family: "Dancing Script", cursive;
-    font-size:20px;
-    color:#f89204;
+    font-size:24px;
+    color:#D8B26E;
  }
  #cat{
     margin-bottom:10px;
@@ -321,7 +321,7 @@
  #ordernow{
     width:100px;
     height:50px;
-    background-color:#C98A3D;
+    background-color:#fe920e;
     color:white;
     border-radius:30px ;
     cursor: pointer;
@@ -335,11 +335,15 @@
  #visitus{
     width:100px;
     height:50px;
-    background-color:#C98A3D;
+    background-color:#fe920e;
     color:white;
     border-radius:30px ;
     cursor: pointer;
     text-decoration: none;
+ }
+ #footertagline{
+    color:#D8B26E;
+    font-family:"Display Playfair", sans-serif;
  }
 
  #visitus a{
@@ -486,14 +490,21 @@
     align-items: center;
     gap: 12px;
   }
+  #mwl{
+    padding-top:10px;
+  }
+  .sparkles{
+    margin-top:30px;
+  }
+  #cat,#footertagline{
+    padding-left:10px;
+
+  }
+  #footertagline{
+    max-width: 70%;
+    margin-top:18px;
+    line-height:1.6;
+  }
+
 }
 
-/*===== Extra: Large Desktop (≥1440px) =====*/
-@media (min-width: 1440px) {
-  .menuGrid {
-    justify-content: center;
-    max-width: 1400px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
